@@ -1,0 +1,7 @@
+<p>Hello!</p>
+
+<% if user_signed_in? %>
+  <p>Signed in</p>
+<% else %>
+  <%= link_to "Sign in with Slack", auth_slack_path %>
+<% end %>
